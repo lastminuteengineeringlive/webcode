@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Notes | LME </title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .items{
+            background-color: aliceblue;
+            border: 3px green;
+            border-radius: 3px;
+        }
+    </style>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/notestyle.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!--
+    HEADER
+  -->
+  
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="LME SVG LOGO CROPED.svg" width="220" height="120" alt="LME logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="LME SVG LOGO CROPED.svg" width="162" height="50" alt="LME logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#playlist" class="navbar-link" data-nav-link>Playlist</a>
+          </li>
+
+          <li class="navbar-item">
+            <a onclick="opennote()" href="notes.html" class="navbar-link" data-nav-link>Notes</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header> 
+
+  <section class="section course" id="courses" aria-label="course">
+    <div class="container">
+
+      <!-- <p class="section-subtitle">Popular Courses</p>
+
+      <h2 class="h2 section-title">Pick A Course To Get Started</h2>  -->
+
+      <ul class="grid-list">
+
+        <li>
+          <div class="course-card">
+
+            <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+              <img src="unit1-introduction.png" width="500" height="500" loading="lazy"
+                alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+            </figure>
+
+            <!--  <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="span">3 Weeks</span>
+            </div>  -->
+
+            <div class="card-content">
+
+              <span class="badge">Unit 1 Introduction</span>
+
+              <h3 class="h3">
+                <a href="https://www.googledrive.com" class="card-title">Click Here to Download Unit-1 Notes</a>
+              </h3>
+
+              <!--  <div class="wrapper">
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="rating-text">(5.0/7 Rating)</p>
+
+              </div>  -->
+
+              <!--  <data class="price" value="29">$29.00</data>  -->
+
+              <!--  <ul class="card-meta-list">
+
+                <li class="card-meta-item">
+                  <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">8 Lessons</span>
+                </li>
+
+                <li class="card-meta-item">
+                  <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">20 Students</span>
+                </li>
+
+              </ul>  -->
+
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <div class="course-card">
+
+            <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+              <img src="unit2-interpolation-img.png" width="370" height="220" loading="lazy"
+                alt="Java Programming Masterclass for Software Developers" class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <span class="badge">Unit 2 Interpolation</span>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Click Here to Download Unit-2 Notes</a>
+              </h3>
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+
+            <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+              <img src="unit3-numer_inte_and_differentiation.png" width="370" height="220" loading="lazy"
+                alt="The Complete Camtasia Course for Content Creators" class="img-cover">
+            </figure>
+
+
+            <div class="card-content">
+
+              <span class="badge">Unit 3 Numerical Integration and Differentiation</span>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Click Here to Download Unit-3 Notes</a>
+              </h3>
+
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+
+      <!--  <a href="#" class="btn has-before">
+        <span class="span">Browse more courses</span>
+
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>  -->
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+    <div class="min-h-screen dark:bg-gray-900">
+    <h1 class="text-center">Download Notes from here </h1>
+
+    make it cmmnt GRID 
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 ">
+
+        <div class="p-6 flex justify-center">
+            <div class="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-slate-800 dark:border-black">
+                <div class="flex flex-col items-center p-6 ">
+                    <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="cona-unit1-notes-img.png" alt=" CONA Notes Unit-1">
+                    <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white"> CONA Notes Unit-1 </h5>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Download Notes Here</span>
+                    
+                    <div class="grid mt-4">
+                    <a class="inline-block text-white bg-purple-700 rounded-full px-3 py-2 text-sm font-semibold mr-2 my-1 cursor-pointer hover:bg-purple-900 text-center" 
+                        href="https://www.googledrive.com" target="_blank" rel="noreferrer">
+
+                        <button class="font-semibold">PDF Notes</button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>  
+
+  </div>  -->
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="LME SVG LOGO CROPED.svg" width="162" height="50" alt="LME logo">
+          </a>
+
+          <p class="footer-brand-text">
+            Here at LME we are focused on providing best content related to Engineering via Notes and Lectures
+          </p>
+
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@eduweb.com" class="footer-link">info@lme.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright © 2024 <a href="#" class="copyright-link">Last Minute Engineering</a> All rights reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+    
+</body>
+</html>
